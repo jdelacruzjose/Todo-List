@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import * as Icon from 'react-bootstrap-icons';
 
 export default class TodoInput extends Component {
   render() {
@@ -8,7 +9,7 @@ export default class TodoInput extends Component {
           <div className ='input-group'>
             <div className ='input-group-prepend'>
               <div className='input-group-text bg-primary text-white'>
-                <i className ='fas fa-book' />
+                <Icon.DocumentText />
               </div>
             </div>
             <input 
@@ -16,7 +17,9 @@ export default class TodoInput extends Component {
               className= 'form-control' 
               placeholder= 'Add A Todo Item' />
           </div>
-          <button type= 'submit'>Add Item</button>
+          <button type= 'submit' className='btn btn-block btn-primary'>
+            Add Item
+          </button>
         </form>
       </div>
     )
