@@ -10,6 +10,9 @@ export default class TodoItem extends Component {
           <span className='mx-2 text-success'>
             <Icon.Pencil />
           </span>
+          <span className='mx-2 text-danger'>
+            <Icon.Trash />
+          </span>
 
         </div>
       </li>

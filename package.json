@@ -12,6 +12,7 @@
     "react-bootstrap-icons": "^1.0.0-alpha2",
     "react-dom": "^16.13.0",
     "react-scripts": "3.4.0",
+    "react-uuid": "^1.0.2",
     "uuid": "^7.0.2"
   },
   "scripts": {
