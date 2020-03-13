@@ -3,7 +3,7 @@ import * as Icon from 'react-bootstrap-icons';
 
 export default class TodoInput extends Component {
   render() {
-    const {item, handleChange, handleSubmit} = this.props
+    const {item, handleChange, handleSubmit, editItem} = this.props
 
     return (
       <div className ='card card-body my-3'>
@@ -23,8 +23,9 @@ export default class TodoInput extends Component {
               onChange= {handleChange}
               /> 
           </div>
-          <button type= 'submit' className='btn btn-block btn-primary'>
-            Add Item
+          <button type= 'submit' 
+          className='btn btn-block btn-primary'>
+          {editItem ? 'Edit Item': 'Add Item'}
           </button>
         </form>
       </div>
